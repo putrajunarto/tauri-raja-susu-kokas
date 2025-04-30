@@ -35,8 +35,112 @@ a {
   text-decoration: none;
 }
 
+iframe {
+  width: 100%;
+  min-height: 95vh;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.titleBebelac {
+  background-color: #2F2D96;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Styles for modal background */
+.modal {
+  /* display: none; */
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for modal content */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.p-3 {
+  padding: 15px;
+}
+
+/* Gaya dasar tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Warna latar belakang untuk header */
+th {
+  background-color: #f4f4f4;
+}
+
+/* Setiap baris genap diberi warna berbeda */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+  /* Warna abu-abu muda */
+}
+
+/* Opsional: Efek hover */
+tr:hover {
+  background-color: #ddd;
 }
