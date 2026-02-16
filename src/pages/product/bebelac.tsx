@@ -27,21 +27,21 @@ export default function Bebelac() {
         <div className={`${styles.row} ${styles.justifyContentCenter} ${styles.alignItemsEnd}`}>
           <div className={styles.col5} style={{ marginBottom: '20px' }}>
             <Link href="/product/bebelac3">
-              <img src="/product/bb3.png" style={{ height: 'auto', width: '88%', margin: '0px auto', display: 'block' }} alt="placeholder" />
+              <img src="/images/1+.png" style={{ height: 'auto', width: '88%', margin: '0px auto', display: 'block' }} alt="placeholder" />
               <span
                 className={styles.btnWhiteProduct}
               >
-                Bebelac 3
+                Bebelac 1+
               </span>
             </Link>
           </div>
           <div className={styles.col5} style={{ marginBottom: '20px' }}>
             <Link href="/product/bebelac4">
-              <img src="/product/bb4.png" style={{ height: 'auto', width: '88%', margin: '0px auto', display: 'block' }} alt="placeholder" />
+              <img src="/images/3+.png" style={{ height: 'auto', width: '88%', margin: '0px auto', display: 'block' }} alt="placeholder" />
               <span
                 className={styles.btnWhiteProduct}
               >
-                Bebelac 4
+                Bebelac 3+
               </span>
             </Link>
           </div>

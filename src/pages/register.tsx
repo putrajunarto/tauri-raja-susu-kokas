@@ -58,6 +58,7 @@ export default function Register() {
       },
       body: JSON.stringify(props),
     });
+    console.log("response", response);
     return await response.json();
   };
 

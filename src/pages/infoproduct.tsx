@@ -11,7 +11,7 @@ export default function Infoproduct() {
     router.push("/");
   };
 
-  useIdleTimer(handleIdle, 30000); // 30 detik iddle auto redirect
+  useIdleTimer(handleIdle, 30000);
 
   return (
     <>

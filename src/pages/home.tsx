@@ -3,9 +3,11 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import useIdleTimer from "../libs/useIdleTimer";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Register() {
   const router = useRouter();
+  const [showQR, setShowQR] = useState(false);
 
   const handleIdle = () => {
     router.push("/");
@@ -37,17 +39,27 @@ export default function Register() {
               <Link href="" className={styles.btnWhite} style={{ marginTop: '20px' }}>Kalkulator Zat Besi</Link>
             </div>
             <div className={styles.col5} style={{ marginBottom: '20px' }}>
-              <Link href="/stunting">
+              <div onClick={() => setShowQR(!showQR)} style={{ cursor: 'pointer' }}>
                 <img src="/images/stunting.png" style={{ height: "auto", width: '100%', margin: '0px auto', display: 'block' }} alt="placeholder" />
                 <span className={styles.btnWhite} style={{ marginTop: '60px' }}>Grow Checker</span>
-              </Link>
+              </div>
             </div>
             <div className={styles.col5} style={{ marginBottom: '20px' }}>
               <Link href="/infoproduct">
-                <img src="/images/KVINFO_.png" style={{ height: "auto", width: '100%', margin: '0px auto', display: 'block' }} alt="placeholder" />
+                <img src="/images/Baru.png" style={{ height: "auto", width: '100%', margin: '0px auto', display: 'block' }} alt="placeholder" />
                 <span className={styles.btnWhite} style={{ marginTop: '60px' }}>Info Product</span>
               </Link>
             </div>
+          </div>
+        </div>
+        <div id="modalGizi" className={`modal ${showQR ? 'flex items-center z-100' : 'd-none'}`}
+          onClick={() => {
+            setShowQR(false)
+          }}
+        >
+          <div className="modal-content">
+            <span className="close" onClick={() => setShowQR(!showQR)}>&times;</span>
+            <img src="/images/qrgrow.jpg" alt="detail bebelac" />
           </div>
         </div>
       </div>
