@@ -12,7 +12,7 @@ export default function Home() {
             playsInline
             style={{ height: "100%", width: "auto", borderRadius: "8px" }}
           >
-            <source src="/Combine_new.mp4" type="video/mp4" />
+            <source src="/new_bebelac.mp4" type="video/mp4" />
           </video>
         </div>
       </Link>
