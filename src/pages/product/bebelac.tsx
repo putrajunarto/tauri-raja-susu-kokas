@@ -18,7 +18,7 @@ export default function Bebelac() {
         className={styles.btnBack}
         style={{
           "position": "absolute",
-          "width": "100vw"
+          "width": "100%"
         }}
       >
         Back

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Link href={'/register'}>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
           <video
             autoPlay
             loop
@@ -12,7 +12,7 @@ export default function Home() {
             playsInline
             style={{ height: "100%", width: "auto", borderRadius: "8px" }}
           >
-            <source src="/new_bebelac.mp4" type="video/mp4" />
+            <source src="/rjs_kokas.webm" type="video/webm" />
           </video>
         </div>
       </Link>

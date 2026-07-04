@@ -19,13 +19,13 @@ export default function Stunting() {
         className={styles.btnBack}
         style={{
           "position": "absolute",
-          "width": "100vw"
+          "width": "100%"
         }}
       >
         Back
       </Link>
       <div className={`${styles.home} ${styles.dFlex} ${styles.alignItemsCenter} ${styles.justifyContentCenter}`} style={{ paddingTop: '50px' }}>
-        <iframe src="https://www.generasimajubebasstunting.alodokter.com/nutrigrain-growth-check" style={{ width: '100vw', height: '100vh' }} frameBorder="0"></iframe>
+        <iframe src="https://www.generasimajubebasstunting.alodokter.com/nutrigrain-growth-check" style={{ width: '100%', height: '100%' }} frameBorder="0"></iframe>
       </div>
     </>
   );

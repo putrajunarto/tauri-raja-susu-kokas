@@ -6,7 +6,11 @@ export default function App({ Component, pageProps }: AppProps) {
   // return <Component {...pageProps} />;
   return (
     <UserProvider>
-      <Component {...pageProps} />
+      <div className="appViewport">
+        <div className="appFrame">
+          <Component {...pageProps} />
+        </div>
+      </div>
     </UserProvider>
   );
 }
