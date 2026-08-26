@@ -12,7 +12,7 @@ export default function Home() {
             playsInline
             style={{ height: "100%", width: "auto", borderRadius: "8px" }}
           >
-            <source src="/rjs_kokas.webm" type="video/webm" />
+            <source src="/rjs_kokas_new.webm" type="video/webm" />
           </video>
         </div>
       </Link>
