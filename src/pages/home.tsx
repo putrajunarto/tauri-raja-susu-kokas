@@ -35,8 +35,8 @@ export default function Register() {
             <div className={styles.col5} style={{ marginBottom: '20px' }}>
               <Link href="/kalkulator">
                 <img src="/images/IRONCHECKKV.png" style={{ height: "auto", width: '60%', margin: '0px auto', display: 'block' }} alt="placeholder" />
+                <span className={styles.btnWhite} style={{ marginTop: '60px' }}>Kalkulator Zat Besi</span>
               </Link>
-              <Link href="" className={styles.btnWhite} style={{ marginTop: '20px' }}>Kalkulator Zat Besi</Link>
             </div>
             {/* <div className={styles.col5} style={{ marginBottom: '20px' }}>
               <div onClick={() => setShowQR(!showQR)} style={{ cursor: 'pointer' }}>
